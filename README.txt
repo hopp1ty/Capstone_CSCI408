@@ -36,7 +36,7 @@ This is a secure Flask web application built as a capstone project. It features 
 ## Project Structure
 
 ```
-Midterm/
+Final/
 ├── secureApp.py               # Main Flask application
 ├── users.db                   # SQLite database for users
 ├── templates/
@@ -65,7 +65,7 @@ Midterm/
 
 ```bash
 git clone <repository_url>
-cd Midterm
+cd Final
 ```
 
 2. **Create a virtual environment**:
@@ -137,3 +137,4 @@ python secureApp.py
 ## License
 
 This project is for educational purposes as part of a capstone project.
+
