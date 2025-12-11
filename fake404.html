@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Error 404</h1>
+<p>The page you are looking for could not be found.</p>
+
+<p>
+If you believe this is an error, please contact the system administrator.
+This incident has been logged for diagnostic review.
+</p>
+
+<p>Error Reference ID: {{ error_id or "A1B2-C3D4" }}</p>
+{% endblock %}

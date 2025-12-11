@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Admin Settings Panel</h2>
+
+<p>
+Access configuration options for backend components and internal 
+service modules. These settings are restricted to authorized personnel.
+</p>
+
+<form>
+    <h3>System Configuration</h3>
+
+    <label>Enable Diagnostic Mode:</label><br>
+    <input type="checkbox" disabled> <i>(placeholder setting)</i><br><br>
+
+    <label>Rebuild Cache Index:</label><br>
+    <button disabled>Execute</button><br><br>
+
+    <label>Maintenance Window:</label><br>
+    <input type="text" placeholder="Scheduled time" disabled><br><br>
+</form>
+
+<p>Settings shown are for demonstration only and have no backend effect.</p>
+{% endblock %}

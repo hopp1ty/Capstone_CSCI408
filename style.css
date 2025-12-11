@@ -1,0 +1,97 @@
+/* Global font */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header and footer */
+header, footer {
+    background-color: #333;
+    padding: 15px 0;
+    color: white;
+    text-align: center;
+}
+
+/* Footer text */
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Navbar layout */
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left navigation links */
+.left-links a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.left-links a:hover {
+    text-decoration: underline;
+}
+
+/* Right-side login/signup buttons */
+.right-links {
+    display: flex;
+    align-items: center;
+}
+
+.right-links a {
+    text-decoration: none;
+    margin-left: 12px;
+    color: white;
+    font-size: 16px;
+}
+
+/* Login / Logout button style */
+.auth-btn {
+    padding: 6px 12px;
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.auth-btn:hover {
+    background-color: #666;
+}
+
+/* Sign Up button highlighted */
+.auth-btn.highlight {
+    background-color: #007bff;
+}
+
+.auth-btn.highlight:hover {
+    background-color: #0069d9;
+}
+
+/* "Welcome, user" text */
+.welcome {
+    color: #ddd;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Content container */
+.content {
+    width: 90%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Error messages */
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}

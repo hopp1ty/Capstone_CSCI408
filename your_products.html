@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>{{ username }}'s Products</h2>
+
+{% if products %}
+    <ul>
+        {% for p in products %}
+        <li>
+            <strong>{{ p.name }}</strong> - {{ p.price }}
+        </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>You have no products yet.</p>
+{% endif %}
+{% endblock %}

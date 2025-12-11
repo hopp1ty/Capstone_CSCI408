@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Login</h2>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<form method="POST" action="{{ url_for('login') }}">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    
+    <label>Username:</label><br>
+    <input type="text" name="username" value="{{ request.form.get('username','') }}" required><br><br>
+
+    <label>Password:</label><br>
+    <input type="password" name="password" required><br><br>
+
+    <div class="g-recaptcha" data-sitekey="{{ recaptcha_site_key }}"></div><br>
+
+    <button type="submit">Login</button>
+</form>
+
+
+{% if error %}
+    <p class="error" style="color:red; font-weight:bold;">{{ error }}</p>
+{% endif %}
+
+{% endblock %}
